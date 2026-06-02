@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Hannah Reyes | Ascend Group LPT</title>
+    <meta name="description" content="Austin real estate agent Analeisa Barron specializes in first-time buyers, investors, and families. Nine years local expertise. Five Star Agent.">
+    <meta property="og:title" content="About Hannah Reyes | Ascend Group LPT">
+    <meta property="og:description" content="Austin real estate agent Analeisa Barron specializes in first-time buyers, investors, and families. Nine years local expertise. Five Star Agent.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+{"@context": "https://schema.org","@type": "RealEstateAgent","name": "Analeisa Barron","jobTitle": "Real Estate Agent","description": "Austin real estate agent specializing in first-time home buyers, investors, and families with nine years of local market expertise","url": "https://www.ascendgroupre.com/team/analeisa-barron-austinsbestrealtors-austinrealestate","telephone": "(512) 902-9147","email": "analeisa@theagencytexas.com","areaServed": ["Austin, TX","Travis County, TX"],"knowsLanguage": ["English","Spanish"],"workingHoursSpecification": [{"dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens": "08:00","closes": "21:00"}],"award": ["Platinum Award","Five Star Agent","Realtor of Distinction"],"alumniOf": {"@type": "Organization","name": "Barron Family Real Estate"},"affiliation": {"@type": "Organization","name": "Ascend Group LPT","url": "https://www.ascendgroupre.com"},"sameAs": ["https://www.zillow.com/profile/Analeisa%20Barron"],"yearsOfExperience": 9,"knowsAbout": ["First-Time Home Buyers","Real Estate Investing","Austin Neighborhoods","Residential Real Estate","Negotiation","Property Valuation"]}
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">Hannah Reyes <span>·</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#neighborhoods">Neighborhoods</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="https://search.ascendgroupre.com/" target="_blank" rel="noopener noreferrer" class="nav-listings">View Listings</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="meta-line"><span class="blog-card-category">About</span></div>
+            <h1>About Hannah Reyes</h1>
+            <p class="article-lede">Your Trusted Partner in Austin Real Estate</p>
+        </div>
+    </div>
+    <div class="article-body"><p>Hannah Reyes brings 20 years of customer service experience and 9 years of dedicated service to Austin and surrounding areas as a real estate professional with Ascend Group LPT. She specializes in guiding first-time home buyers, seasoned investors, and families through every step of the home buying process with expert care and attention to detail.</p><p>Hannah believes that buying a home is more than just a transaction—it's about securing your future. Her expertise in negotiation ensures that clients not only find their ideal homes but also maximize their investment opportunities. Her low-pressure, compassionate approach empowers clients throughout the process, while her meticulous attention to detail ensures no aspect of the purchase is overlooked.</p><p>With nine years of Austin market expertise, Hannah provides local insights and guidance that make navigating the real estate landscape a streamlined experience. She is passionate about helping people build wealth through homeownership, offering personalized education and support to help clients achieve their real estate goals.</p><p>Hannah's commitment to delivering exceptional service and securing the best outcomes for her clients has established her as a trusted advocate in the Austin real estate market. Whether you're purchasing your first home or building an investment portfolio, Hannah provides the informed guidance and professional support needed to achieve homeownership with confidence.</p>
+                <div class="awards-block fade-in" aria-label="Credentials">
+                    <div class="awards-label">Credentials &amp; Designations</div>
+                    <ul class="awards-chips"><li class="award-chip">Platinum Award</li><li class="award-chip">Five Star Agent</li><li class="award-chip">Realtor of Distinction</li></ul>
+                </div>
+    </div>
+
+    <footer>
+        <div class="footer-brand">Hannah Reyes · Ascend Group LPT</div>
+        <p>Equal Housing Opportunity</p>
+        <p class="footer-disclaimer">Content on this site is created with AI assistance and reviewed by Hannah Reyes.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog/index.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://withnotable.ai" target="_blank" rel="noopener noreferrer">Powered by withNotable</a>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => { navLinks.classList.toggle('mobile-open'); navToggle.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>

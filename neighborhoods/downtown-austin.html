@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>downtown austin Neighborhood Guide | Hannah Reyes</title>
+    <meta name="description" content="Downtown Austin pulses with live music venues, food trucks, and the Colorado River, where urban energy meets Texas hill country charm.">
+    <meta property="og:title" content="downtown austin Neighborhood Guide | Hannah Reyes">
+    <meta property="og:description" content="Downtown Austin pulses with live music venues, food trucks, and the Colorado River, where urban energy meets Texas hill country charm.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "downtown austin",
+  "url": "https://withnotable.github.io/hannah-reyes-site/neighborhoods/downtown-austin.html",
+  "description": "Downtown Austin pulses with live music venues, food trucks, and the Colorado River, where urban energy meets Texas hill country charm.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Austin",
+    "addressRegion": "TX"
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Austin, TX"
+  }
+}
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-brand">Hannah Reyes <span>·</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../index.html#neighborhoods">Neighborhoods</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="https://search.ascendgroupre.com/" target="_blank" rel="noopener noreferrer" class="nav-listings">View Listings</a></li>
+                <li><a href="../contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="meta-line"><span class="blog-card-category">Neighborhood Guide</span><span>Austin, TX</span></div>
+            <h1>downtown austin</h1>
+            <p class="article-lede">Downtown Austin pulses with live music venues, food trucks, and the Colorado River, where urban energy meets Texas hill country charm.</p>
+        </div>
+    </div>
+
+    <div class="article-body">
+        <h2>Urban Heart of the Music City</h2><p>Downtown Austin sits at the center of Texas's capital city, where the Colorado River curves through rolling hills. This compact urban core features a mix of historic buildings and modern high-rises, creating a distinctive skyline against the backdrop of Texas hill country. The area has evolved from a small frontier settlement in the 1830s to become the vibrant heart of Austin's renowned music and cultural scene.</p><h2>Architecture and Character</h2><p>The downtown landscape blends historic limestone buildings from the late 1800s with contemporary glass towers and converted warehouses. Victorian-era structures stand alongside modern condominiums and lofts, while the iconic Texas State Capitol anchors the northern edge of downtown. The Colorado River forms the southern boundary, with pedestrian bridges connecting downtown to the South Austin neighborhoods.</p><h2>Dining and Entertainment</h2><p>Food trucks cluster in lots throughout downtown, serving everything from breakfast tacos to international cuisine. The area features numerous live music venues of all sizes, from intimate clubs to larger halls that showcase both emerging and established artists. Restaurants range from casual barbecue joints to upscale establishments, many featuring outdoor patios that take advantage of Austin's mild climate.</p><h2>Parks and Outdoor Life</h2><p>The Colorado River provides opportunities for kayaking, stand-up paddleboarding, and riverside trails. Zilker Park lies just across the river, offering green space for outdoor activities. Downtown's urban grid includes several small parks and plazas, while the hike-and-bike trail system connects the area to Austin's extensive network of outdoor recreation paths.</p>
+        <div class="neighborhood-cta">
+            <h3>Considering downtown austin?</h3>
+            <p>Hannah Reyes knows this area firsthand. Reach out for local guidance.</p>
+            <a href="https://search.ascendgroupre.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">View Listings in Austin</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-brand">Hannah Reyes · Ascend Group LPT</div>
+        <p>Equal Housing Opportunity</p>
+        <p class="footer-disclaimer">Content on this site is created with AI assistance and reviewed by Hannah Reyes.</p>
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../blog/index.html">Blog</a>
+            <a href="../contact.html">Contact</a>
+            <a href="https://withnotable.ai" target="_blank" rel="noopener noreferrer">Powered by withNotable</a>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => { navLinks.classList.toggle('mobile-open'); navToggle.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>
